@@ -1,0 +1,42 @@
+.header {
+    background-color: rgb(216, 216, 216);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1em;
+}
+
+.header nav ul li a {
+    text-decoration: none;
+}
+
+.header .login button {
+    background-color: #f0ad4e;
+    border: none;
+    color: white;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+.login{
+    display: flex;
+    gap: 20px;
+}
+
+.irlogo{
+    width: 40px;
+    height: 40px;
+}

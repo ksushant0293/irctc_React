@@ -1,0 +1,76 @@
+.loginSignupPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 50px;
+    margin-bottom: 60px; */
+}
+
+.formContainer {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+/* .signupContainer{
+    margin-top: 40px;
+    margin-bottom: 40px ;
+} */
+
+.loginContainer h2{
+    margin-bottom: 1em;
+    color: #00509E;
+}
+
+.formGroup {
+    margin-bottom: 1.5em;
+    text-align: left;
+}
+
+.formGroup label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.formGroup input {
+    width: 100%;
+    padding: 0.75em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #00509E;
+    color: white;
+    padding: 0.75em 1.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #003F73;
+}
+
+.toggleLink {
+    margin-top: 1em;
+    color: #00509E;
+}
+
+.toggleLink span {
+    color: #00509E;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.toggleLink span:hover {
+    text-decoration: underline;
+}

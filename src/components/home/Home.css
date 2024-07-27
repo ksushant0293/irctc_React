@@ -1,0 +1,32 @@
+.homeDiv{
+    background-image: url(../../assets/vande1.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    width: 100%;
+    height: 80vh;
+}
+
+.bookTrain{
+    width: 50%;
+    
+}
+
+.container{
+    text-align: center;
+}
+
+.bookTrain form {
+    width: 80%;
+    margin: auto;
+}
+
+.formGroup{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    padding: 5px;
+}
+

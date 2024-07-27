@@ -1,0 +1,30 @@
+.bookTrain {
+    background-color: #f9f9f9;
+    width: 50vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+h2{
+    color: black;
+}
+
+.formGroup {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formGroup #date{
+    width: 100%;
+}
+.selectDiv{
+    display: flex;
+}
+
