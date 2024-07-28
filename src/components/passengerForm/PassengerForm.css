@@ -1,0 +1,5 @@
+.Passengerdiv, .notesDiv, .PassengerDetails, .ContactDetails, .payment{
+    border: 2px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

@@ -14,6 +14,10 @@ const Header = () => {
                     <li><Link to="/trains">trains</Link></li>
                     <li><Link to="/flights">Flights</Link></li>
                     <li><Link to="/hotels">Hotels</Link></li>
+                    <li><Link to="/passengerForm">passengerForm</Link></li>
+                    <li><Link to="/TrainList">TrainList</Link></li>
+                    <li><Link to="/TrainList1">TrainList1</Link></li>
+
                 </ul>
             </nav>
             <div className="login">
