@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import Header from "../header/Header";
 import Footer from "../footer/Footer";
 import Select from "react-select";
@@ -6,6 +6,8 @@ import "./Home.css";
 import ad2 from "../../assets/ad2.jpeg"
 import { trainStations } from "../trainList/TrainListData";
 import { useNavigate } from "react-router-dom";
+
+
 
 // const trainStations = [
 //   { id: 1, station_name: "Ahmedabad Jn", station_cd: "ADI" },
