@@ -64,9 +64,9 @@ const Finalbooking = () => {
         </div>
         <div className="bookedPassengerDetails">
           <h2>Passenger Details</h2>
-          <h4>name- {name}</h4>
-          <h4>email- {email}</h4>
-          <h4>mobile- {contact}</h4>
+          {/* <h4>name- {name}</h4> */}
+          {/* <h4>email- {email}</h4> */}
+          {/* <h4>mobile- {contact}</h4> */}
         </div>
         <div className="date">
           <h2>your seat is confirmed! happy journey</h2>
