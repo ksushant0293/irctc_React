@@ -13,15 +13,17 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 300px;
+}
+
+.signupContainer h2{
+    margin-bottom: 10px;
+    color: #00509E;
+}
+
+.loginMargin{
     margin-top: 80px;
     margin-bottom: 80px;
 }
-
-/* .signupContainer{
-    margin-top: 40px;
-    margin-bottom: 40px ;
-} */
-
 .loginContainer h2{
     margin-bottom: 1em;
     color: #00509E;
@@ -73,4 +75,30 @@ button:hover {
 
 .toggleLink span:hover {
     text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* .toggle-link{
+    margin-top: 1em;
+    color: #00509E;
+} */
+
+/* .toggle-Link span {
+    color: #00509E;
+    text-decoration: none;
+    cursor: pointer;
+} */
+
+/* .toggle-Link span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+} */
+
+
+.imgDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
 }

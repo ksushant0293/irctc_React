@@ -1,12 +1,7 @@
-.searchDiv{
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 20px;
-    background-color: #213d77;
-    display: flex;
-    gap: 10px;
+/* 
 
+.listOfTrain{
+   
 }
 
 .fromToDiv{
@@ -19,6 +14,58 @@
     width: 30%;
 }
 
+
+
+.classDiv, .trainTiming{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+} */
+
+.searchDiv{
+    text-align: center;
+    color: #213d77 ;
+}
+
+.listOfTrain{
+    /* display: flex; */
+}
+
+.trainDetailsDiv{
+    border: 2px solid #213d77;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 ;
+    padding: 20px;
+    color: #213d77 ;
+    
+}
+
+.left, .right {
+    width: 50%;
+    /* border: 2px solid blue; */
+
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.trainNameDiv, .trainTiming, .classDiv {
+    display: flex;
+    gap: 5px
+}
+
+.bookdiv{
+    display: flex;
+    justify-content: center;
+}
+
 .adDiv{
     width: 100%;
     display: flex;
@@ -26,11 +73,4 @@
     align-items: center;
     margin-top: 10px;
     margin-bottom: 10px;
-}
-
-.trainNameDiv, .classDiv, .trainTiming{
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
 }

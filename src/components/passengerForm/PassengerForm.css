@@ -1,5 +1,77 @@
-.Passengerdiv, .notesDiv, .PassengerDetails, .ContactDetails, .payment{
-    border: 2px solid black;
-    margin-top: 10px;
-    margin-bottom: 10px;
+.Passengerdiv{
+    width: 95%;
+    margin: auto;
+}
+
+
+.notesDiv{
+    text-align: center;
+    background-color: #fef1e9;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.mainDiv{
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.mainDiv h1{
+    text-align: center;
+    color: #213d77 ;
+}
+
+.PassengerDetails{
+    border: 2px solid #213d77;
+    padding: 10px 20px ;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+
+    
+}
+
+.passengerFormDiv{
+    display: flex;
+    gap: 10px;
+}
+
+.ContactDetails{
+    padding: 10px 0 ;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ContactDetails h2, .paymentDetails h2{
+    color: #213d77 ;
+}
+
+.contactDiv{
+    display: flex;
+    gap: 10px;
+}
+
+.paymentDetails{
+    border: 2px solid #213d77;
+    padding: 10px 20px ;
+}
+
+.paymentDiv{
+    padding: 5px 0;
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+
+.Continue{
+    display: flex;
+    justify-content: center;
+}
+
+.Continuediv{
+    width: 20%;
 }

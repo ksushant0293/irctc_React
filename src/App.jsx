@@ -5,29 +5,34 @@ import "./App.css";
 import Home from "./components/home/Home";
 import PassengerForm from "./components/passengerForm/PassengerForm";
 import TrainList from "./components/trainList/TrainList";
-import TrainList1 from "./components/trainList/TrainList1";
+import Flight from "./components/Flight/Flight";
+import Finalbooking from "./Finalbooking/Finalbooking";
 
 function App() {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Home />,
+      element: <LoginSignupPage />,
     },
     {
       path: "/passengerForm",
       element: <PassengerForm />,
     },
     {
-      path: "/loginSignupPage",
-      element: <LoginSignupPage />,
+      path: "/home",
+      element: <Home />,
     },
     {
       path: "/TrainList",
       element: <TrainList />,
     },
     {
-      path: "/TrainList1",
-      element: <TrainList1 />,
+      path: "/Flight",
+      element: <Flight/>,
+    },
+    {
+      path: "/Finalbooking",
+      element: <Finalbooking/>,
     },
   ]);
 
