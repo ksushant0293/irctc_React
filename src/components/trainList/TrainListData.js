@@ -408,7 +408,8 @@ export const trainDetails = [
         },
       ],
       runs_on: [1, 1, 1, 1, 0, 1, 1],
-    },
+    }
+  
   ];
 
   export const trainStations = [
