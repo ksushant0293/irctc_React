@@ -3,6 +3,24 @@ import "./LoginSignupPage.css";
 import irctc from "../../assets/irctc_logo.png";
 import irctc2 from "../../assets/irctc2.png";
 import { useNavigate } from "react-router-dom";
+// Define the data object
+const passengerFormData = {
+  name: "mamta",
+  age: "23",
+  gender: "female",
+  country: "IN",
+  preference: "window",
+  catering: "veg"
+};
+
+// Convert the data object to a JSON string
+const passengerFormDataString = JSON.stringify(passengerFormData);
+
+// Save the JSON string to localStorage
+localStorage.setItem('passengerFormData', passengerFormDataString);
+
+// Optional: Log a message to the console for confirmation
+console.log('Passenger data saved to localStorage.');
 
 const LoginSignupPage = () => {
   const [isLogin, setIsLogin] = useState(true);

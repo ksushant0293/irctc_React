@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import Header from "../components/header/Header";
 import "./Finalbooking.css"
 import arrow from "../assets/arrow.png"
@@ -19,9 +19,12 @@ const Pnr = Math.floor(Math.random() * 10000000);
 // const passengerName = JSON.parse(data);
 // console.log(passengerName.name);
 // const name = passengerName.name
-const name = localStorage.getItem("passengerFormData") ? (JSON.parse(localStorage.getItem("passengerFormData"))).name : "Sushant";
-const email = localStorage.getItem("passengerFormData") ? (JSON.parse(localStorage.getItem("passengerFormData"))).email:"test@email.com";
-const contact = localStorage.getItem("passengerFormData") ? (JSON.parse(localStorage.getItem("passengerFormData"))).contact : "999999999";
+// const name = localStorage.getItem("passengerFormData") ? (JSON.parse(localStorage.getItem("passengerFormData"))).name : "Sushant";
+// const email = localStorage.getItem("passengerFormData") ? (JSON.parse(localStorage.getItem("passengerFormData"))).email:"test@email.com";
+// const contact = localStorage.getItem("passengerFormData") ? (JSON.parse(localStorage.getItem("passengerFormData"))).contact : "999999999";
+const name = (JSON.parse(localStorage.getItem("passengerFormData"))).name;
+const email = (JSON.parse(localStorage.getItem("passengerFormData"))).email;
+const contact = (JSON.parse(localStorage.getItem("passengerFormData"))).contact;
 const Finalbooking = () => {
   return (
     <div>
