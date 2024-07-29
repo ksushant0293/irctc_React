@@ -24,9 +24,9 @@ const Pnr = Math.floor(Math.random() * 10000000);
 // const contact = localStorage.getItem("passengerFormData") ? (JSON.parse(localStorage.getItem("passengerFormData"))).contact : "999999999";
 
 const Finalbooking = () => {
-  // const name = (JSON.parse(localStorage.getItem("passengerFormData"))).name;
-  // const email = (JSON.parse(localStorage.getItem("passengerFormData"))).email;
-  // const contact = (JSON.parse(localStorage.getItem("passengerFormData"))).contact;
+  const name = (JSON.parse(localStorage.getItem("passengerFormData"))).name;
+  const email = (JSON.parse(localStorage.getItem("passengerFormData"))).email;
+  const contact = (JSON.parse(localStorage.getItem("passengerFormData"))).contact;
   return (
     <div>
       <Header />

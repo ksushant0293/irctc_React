@@ -3,7 +3,6 @@ import "./LoginSignupPage.css";
 import irctc from "../../assets/irctc_logo.png";
 import irctc2 from "../../assets/irctc2.png";
 import { useNavigate } from "react-router-dom";
-// Define the data object
 
 
 const LoginSignupPage = () => {
