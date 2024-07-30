@@ -1,13 +1,11 @@
-import  { useState } from "react";
+import { useState, useEffect } from "react";
 import Header from "../header/Header";
 import Footer from "../footer/Footer";
 import Select from "react-select";
 import "./Home.css";
-import ad2 from "../../assets/ad2.jpeg"
+import ad2 from "../../assets/ad2.jpeg";
 import { trainStations } from "../trainList/TrainListData";
 import { useNavigate } from "react-router-dom";
-
-
 
 // const trainStations = [
 //   { id: 1, station_name: "Ahmedabad Jn", station_cd: "ADI" },
@@ -62,6 +60,11 @@ const Home = () => {
   const [errors, setErrors] = useState({});
   const navigate = useNavigate();
 
+  useEffect(() => {
+    const today = new Date().toISOString().split("T")[0];
+    setDate(today);
+  }, []);
+
   const handleFromChange = (selectedOption) => {
     setFromStation(selectedOption);
     setFromStationName(selectedOption?.label);
@@ -86,6 +89,9 @@ const Home = () => {
     const errors = {};
     if (!fromStation) errors.fromStation = "From Station is required";
     if (!toStation) errors.toStation = "To Station is required";
+    if (fromStation && toStation && fromStation.value === toStation.value) {
+      errors.toStation = "From and To stations cannot be the same";
+    }
     if (!date) errors.date = "Date is required";
     return errors;
   };
@@ -109,8 +115,8 @@ const Home = () => {
   ];
 
   const quotaOptions = [
-    { value: 'General', label: 'General' },
-    { value: 'Tatkal', label: 'Tatkal' },
+    { value: "General", label: "General" },
+    { value: "Tatkal", label: "Tatkal" },
   ];
 
   return (
@@ -133,7 +139,8 @@ const Home = () => {
                 {errors.fromStation && (
                   <p className="error">{errors.fromStation}</p>
                 )}
-                <Select className="select"
+                <Select
+                  className="select"
                   options={stationOptions}
                   value={toStation}
                   onChange={handleToChange}
@@ -143,20 +150,28 @@ const Home = () => {
                 {errors.toStation && (
                   <p className="error">{errors.toStation}</p>
                 )}
+                {/* <input
+                  type="date"
+                  id="date"
+                  name="date"
+                  value={date}
+                  onChange={handleDateChange}
+                /> */}
                 <input
                   type="date"
                   id="date"
                   name="date"
                   value={date}
                   onChange={handleDateChange}
+                  min={new Date().toISOString().split("T")[0]}
                 />
                 {errors.date && <p className="error">{errors.date}</p>}
                 <Select
                   options={classOption}
                   isClearable={true}
                   placeholder="All Classes"
-                />                
-                <Select 
+                />
+                <Select
                   options={quotaOptions}
                   isClearable={true}
                   placeholder="General"
@@ -172,8 +187,8 @@ const Home = () => {
         </div>
       </div>
       <div className="adimg">
-          <img src={ad2} alt="" />
-        </div>
+        <img src={ad2} alt="" />
+      </div>
       <Footer />
     </div>
   );

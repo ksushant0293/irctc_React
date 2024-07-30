@@ -29,7 +29,7 @@ const LoginSignupPage = () => {
     if (
       username === storedUsername && password === storedPassword
     ) {
-      navigate("/home"); // Navigate to the home page
+      navigate("/home");
     } else {
       alert("Invalid username or password");
     }
@@ -39,7 +39,7 @@ const LoginSignupPage = () => {
     const newErrors = {};
     if (!signupUsername) newErrors.signupUsername = "Username is required";
     if (!signupEmail) newErrors.signupEmail = "Email is required";
-    if (!signupMobile) newErrors.signupMobile = "Mobile number is required";
+    if (!/^\d{10}$/.test(signupMobile)) newErrors.signupMobile = "Please enter a valid mobile number";
     if (!signupPassword) newErrors.signupPassword = "Password is required";
     if (signupPassword !== confirmPassword)
       newErrors.confirmPassword = "Passwords do not match";
@@ -53,7 +53,6 @@ const LoginSignupPage = () => {
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
     } else {
-      // Submit the form (e.g., send data to the backend)
       localStorage.setItem("username", signupUsername);
       localStorage.setItem("password", signupPassword);
       setSignupUsername("");
@@ -138,6 +137,14 @@ const LoginSignupPage = () => {
                     {errors.signupEmail && <p className="error">{errors.signupEmail}</p>}
                   </div>
                   <div className="formGroup">
+                    {/* <input
+                      type="tel"
+                      id="mobile"
+                      name="mobile"
+                      placeholder="Mobile Number"
+                      value={signupMobile}
+                      onChange={(e) => setSignupMobile(e.target.value)}
+                    /> */}
                     <input
                       type="tel"
                       id="mobile"
@@ -145,6 +152,7 @@ const LoginSignupPage = () => {
                       placeholder="Mobile Number"
                       value={signupMobile}
                       onChange={(e) => setSignupMobile(e.target.value)}
+                      maxLength="10"
                     />
                     {errors.signupMobile && <p className="error">{errors.signupMobile}</p>}
                   </div>
